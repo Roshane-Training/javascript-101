@@ -12,21 +12,25 @@
 			<div class="mb-2">
 				<h1 id="result" class="text-3xl font-bold">0</h1>
 			</div>
-			<form id="calculateForm" class="w-8/12 mx-auto -mt-96">
+			<form id="calculateForm" class="w-5/12 mx-auto -mt-96">
 				<div class="mb-6">
 					<label for="num1" class="block mb-2 text-sm font-medium text-gray-900">Number 1</label>
 					<input type="number" id="num1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Number 1" required="" />
 				</div>
 				<div class="mb-6">
-					<label for="operand" class="block mb-2 text-sm font-medium text-gray-900">Operand</label>
-					<select id="operand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Number 1" required="">
-						<option value="+">+</option>
-						<option value="-">-</option>
-						<option value="*">*</option>
-						<option value="/">/</option>
+					<label for="category" class="block mb-2 text-sm font-medium text-gray-900">Category</label>
+					<select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Number 1" required="">
+						<option value="+">Add (+)</option>
+						<option value="-">Subtract (-)</option>
+						<option value="*">Multiply (*)</option>
+						<option value="/">Divide (/)</option>
+						<option value="circ">Area of Circle using Circumfrence</option>
+						<option value="radius">Area of Circle using Radius</option>
+						<option value="diameter">Area of Circle using Diameter</option>
+						<option value="rect">Area of Rectangle</option>
 					</select>
 				</div>
-				<div class="mb-6">
+				<div id="secondField" class="mb-6">
 					<label for="num2" class="block mb-2 text-sm font-medium text-gray-900">Number 2</label>
 					<input type="number" id="num2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Number 2" required="" />
 				</div>
